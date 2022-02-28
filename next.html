@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <div class="background">
+    <head>
+      
+      <h1>Talking Condore</h1>
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+      <div class="button">
+      <img src="https://i.postimg.cc/NjG4S1M0/condore.jpg" alt="Contol">
+      <input id="ans">
+      <button onclick="jawab()">Click Here</button>
+      <h2 id="respon"></h2>
+      <h2 id="endingss"></h2>
+      <button onclick="copyright()">Credits</button>
+      <h2 id="credit"></h2>
+      
+      </div>
+      <a href="fnaf.mp3"><a href="lol.html"><h1 id="ending"></h1></a></a>
+      <a href="condore.html"><button>Game</button></a>
+    </body>
+  </div>
+<style>
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+label{
+  text-align: center;
+}
+.button{
+  text-align: center;
+}
+.background{
+  
+}
+</style>
+<script>
+const response = [
+  "Ya",
+  "Tidak",
+  "Tidak Tahu",
+  "HAHAHA",
+  "Aku Suka Sama Dean",
+  "Aku Istri Dean",
+  "CKP TW",
+  "Kaget",
+  "Hmmmmmmm",
+  "?",
+
+];
+var a;
+function jawab(){
+    
+    
+    let a = document.getElementById("ans").value;
+    if (a === "hjq12jfsakdi12jhf"){
+      alert("Ending Rahasia")
+      document.body.style.backgroundImage = "url('https://i.ibb.co/Qm6F5Sw/test.png')";
+      document.getElementById("ending").innerHTML = "Ending Rahasia";
+      document.getElementById("endingss").innerHTML = "Halo Aku Condore 666 Kamu Harus Mendownload File Ini";
+      
+    }
+    else if (a === ""){
+      document.getElementById("respon").innerHTML = "Harus Ada Pertanyaan";
+      
+    }else{
+      const responses = response[Math.floor(Math.random() * response.length)];
+      document.getElementById("respon").innerHTML = responses;
+             
+    }
+    
+}
+function copyright(){
+    document.getElementById("credit").innerHTML = "This Apk Created By TimeBaby";
+}
+function endingrahasia(){
+    document
+}
+
+</script>
+</html>
